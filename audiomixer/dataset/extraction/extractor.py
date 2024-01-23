@@ -1,7 +1,7 @@
 from abc import ABC, abstractclassmethod
 
 
-# Base class for extractors
+# Abstract Class that provides an interface for extractors
 class Extractor(ABC):
     def __init__(self, name):
         self.name = name
