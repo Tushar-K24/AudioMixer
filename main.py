@@ -1,5 +1,6 @@
 import sys
 from audiomixer.segmentation.segment import segment
+from audiomixer.dataset.createDataset import create_dataset
 
 if __name__ == "__main__":
     """
@@ -9,4 +10,5 @@ if __name__ == "__main__":
     $python main.py src_path dest_path
     """
     args = sys.argv[1:]
-    segment(*args)
+    # segment(*args)
+    create_dataset(*args)
