@@ -26,7 +26,7 @@ class MFCCExtractor(Extractor):
         :return: (np.ndarray) MFCC sequence
         """
         return mfcc(
-            signal,
+            y=signal,
             n_mfcc=self.num_coefficients,
             n_fft=self.frame_size,
             hop_length=self.hop_length,

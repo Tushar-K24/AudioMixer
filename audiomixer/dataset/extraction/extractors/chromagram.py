@@ -20,5 +20,5 @@ class ChromagramExtractor(Extractor):
         :return: (np.ndarray) Chromogram
         """
         return chroma_stft(
-            signal, n_fft=self.frame_size, hop_length=self.hop_length, sr=sample_rate
+            y=signal, n_fft=self.frame_size, hop_length=self.hop_length, sr=sample_rate
         )

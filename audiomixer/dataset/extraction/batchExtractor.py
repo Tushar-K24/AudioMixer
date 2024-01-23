@@ -46,7 +46,7 @@ class BatchExtractor:
         return features
 
     def _extract_features_for_file(self, file_path):
-        signal = load_audio(file_path, self.sample_rate)
+        signal, _ = load_audio(file_path, self.sample_rate)
         features = {}
         for extractor in self.extractors:
             features[extractor.name] = extractor.extract(signal, self.sample_rate)
