@@ -1,7 +1,7 @@
 from audiomixer.dataset.aggregation.batchAggregator import BatchAggregator
 
 
-class HeirarchicalBatchAggregator(BatchAggregator):
+class HierarchicalBatchAggregator(BatchAggregator):
     def __init__(self):
         super().__init__()
 

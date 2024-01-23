@@ -5,8 +5,8 @@ from audiomixer.dataset.extraction.extractors.chromagram import ChromagramExtrac
 from audiomixer.dataset.extraction.extractors.mfcc import MFCCExtractor
 
 from audiomixer.dataset.aggregation.aggregators.meanAggregator import MeanAggregator
-from audiomixer.dataset.aggregation.batchAggregators.heirarchicalBatchAggregator import (
-    HeirarchicalBatchAggregator,
+from audiomixer.dataset.aggregation.batchAggregators.hierarchicalBatchAggregator import (
+    HierarchicalBatchAggregator,
 )
 from audiomixer.dataset.aggregation.multiTrackBatchAggregator import (
     MultiTrackBatchAggregator,
@@ -21,7 +21,7 @@ def create_dataset(dir, save_dir, sample_rate=DEFAULT_SAMPLE_RATE):
     for extractor in extractors:
         batch_extractor.add_extractor(extractor)
 
-    hba = HeirarchicalBatchAggregator()
+    hba = HierarchicalBatchAggregator()
     mtba = MultiTrackBatchAggregator()
     mtba.batch_aggregator = hba
     aggregators = [MeanAggregator(1)]
