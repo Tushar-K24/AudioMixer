@@ -1,6 +1,6 @@
 import librosa
 
-from audiomixer.segmentation.constants import HOP_LENGTH
+from audiomixer.constants import HOP_LENGTH
 
 
 def track_beat_and_tempo(signal, sr):

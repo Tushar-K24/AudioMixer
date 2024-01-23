@@ -2,9 +2,9 @@ import os
 from tqdm import tqdm
 
 from audiomixer.utils.io import load_audio, write_wav
-from audiomixer.segmentation.constants import HOP_LENGTH
-from audiomixer.segmentation.beattracker import track_beat_and_tempo
-from audiomixer.segmentation.cuttrack import cut
+from audiomixer.constants import HOP_LENGTH
+from audiomixer.segmentation.beatTracker import track_beat_and_tempo
+from audiomixer.segmentation.cutTrack import cut
 
 
 class SegmentExtractor:
